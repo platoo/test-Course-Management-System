@@ -1,11 +1,13 @@
 <div class="col-md-12 main">
     <h1 class="page-header">Course - {{ $method }}
 
+    @if($method != 'Profile')
     <div class="pull-right">
-        <a href="{{ url('course') }}" class="btn btn-small btn-info">
+        <a href="{{ url('membership') }}" class="btn btn-small btn-info">
           <span class="glyphicon glyphicon-chevron-left"></span> Back</a>
       </div>
     </h1>
+    @endif
 
 <form method="post">
   <div class="form-group">
