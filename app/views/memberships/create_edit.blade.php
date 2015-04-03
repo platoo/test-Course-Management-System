@@ -17,12 +17,12 @@
    @if($method!='Delete')
   <div class="form-group">
     <label for="membership_password">Password</label>
-    <input {{ $method=='Delete'?'disabled':''; }} name="password" type="text" class="form-control" id="membership_password" placeholder="Enter password" value="">
+    <input {{ $method=='Delete'?'disabled':''; }} name="password" type="password" class="form-control" id="membership_password" placeholder="Enter password" value="">
   </div>
  
   <div class="form-group">
     <label for="membership_password_confirmation">Password Confirmation</label>
-    <input {{ $method=='Delete'?'disabled':''; }} name="password_confirmation" type="text" class="form-control" id="membership_password_confirmation" placeholder="Enter Password Confirmation" value="">
+    <input {{ $method=='Delete'?'disabled':''; }} name="password_confirmation" type="password" class="form-control" id="membership_password_confirmation" placeholder="Enter Password Confirmation" value="">
   </div>
     @endif
 

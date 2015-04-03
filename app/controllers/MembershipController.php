@@ -13,9 +13,12 @@ class MembershipController extends BaseController {
 	}
 
 	public function getIndex() {
-
+		if( Auth::user()->role->name == 'Admin' ){
 		$data['memberships'] = User::paginate(10);
 		$this->layout->content = View::make('memberships.index', $data);
+		}else{
+			return Redirect::to('course')->with('message', 'Can\'t Access');
+		}
 	}
 
 	public function getCreate() {
