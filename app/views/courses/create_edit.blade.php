@@ -6,8 +6,9 @@
         <a href="{{ url('membership') }}" class="btn btn-small btn-info">
           <span class="glyphicon glyphicon-chevron-left"></span> Back</a>
       </div>
-    </h1>
     @endif
+    </h1>
+    
 
 <form method="post">
   <div class="form-group">
